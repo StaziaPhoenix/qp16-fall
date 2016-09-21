@@ -1,0 +1,41 @@
+/* BUTTONS FOR PRE-SET WEATHER CONDITIONS */
+.weathers {
+	text-align: center;
+}
+
+.weatherButton {
+    color: white;
+    display: inline-block;
+    font-size: 12pt;
+    margin: 20px 20px 20px 0;
+    padding: 10px;
+    height: 250px;
+    width: 150px;
+}
+
+#Rain {
+	background:url("weatherbox_rain.jpg");
+	background-size: 100% 100%;
+}
+
+#Sunrise {
+	background-image: url("weatherbox_sunrise.jpg");
+	background-size: 100% 100%;
+}
+
+#Thunderstorm {
+	background-image: url("weatherbox_thunderstorm.jpg");
+	background-size: 100% 100%;
+}
+
+#Fog {
+	background-image: url("weatherbox_fog.jpg");
+	background-size: 100% 100%;
+}
+
+#Sunny {
+	background-image: url("weatherbox_sunny.jpg");
+	background-size: 100% 100%;
+
+}
+/* END WEATHER CONDITION BUTTONS */
