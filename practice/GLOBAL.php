@@ -1,4 +1,12 @@
+<!-- Global contains the functions and appearance that you want to have
+available on every page. Here, I have the function for connecting to
+Mongo and the header image. I recommend also creating a navbar file and
+including it at the bottom, so that all of your pages have the same menu
+bar. -->
+
 <style>
+/* embedded css. I usually make a separate file for css, but for something
+simple like this, it is valid to put style tags at the top */
 	img {
 		display: block;
 		height: 190px;
@@ -8,13 +16,11 @@
 	}
 </style>
 
-<?php
+<?php // declare a PHP block.
 	date_default_timezone_set('America/Los_Angeles');
-	/*
-		This page is intended for keeping GLOBAL variable and functions at the highest (most general) level.  
-		Every page will (likely) include this.
-	*/
 
+	// get a reference to your mlab database. Call this function in pages
+	// which use mongo
 	function connectMongo() {
 		$connection = new MongoClient("mongodb://admin:admin@ds019926.mlab.com:19926/qpdemo");
 		$database = $connection->qpdemo;
@@ -23,5 +29,5 @@
 	}
 ?>
 		
-<img src="playtime.png">
-<br><hr><br>
+<img src="playtime.png"> <!-- The header image -->
+<br><hr><br> <!-- I like whitespace. <br> =>linebreak, <hr> =>dividing line -->

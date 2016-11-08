@@ -1,17 +1,19 @@
-.tbl table {
+/* css files format html. Link to this page in your php file, and it will
+apply these settings to the appropriate labels. */
+
+.tbl table { /* This is why divs naming classes are important. This says:
+								apply these formats to the table in .tbl class. If we had
+								multiple tables, each with different settings, this would
+								keep the formatting instructions from conflicting. */
 	width: 40%;
 	table-layout: fixed;
 }
 
-td .tbl {
+td .tbl { /* order doesn't matter. td .tbl is the same as .tbl td */
 	text-align: center;
 }
 
-.header {
-	font-weight: bold;
-}
-
-
-h1 {
+h1 { /* No class! This will apply to EVERY instance of h1 tags in EVERY
+				file you include this in */
 	font-size: 22pt;
 }
