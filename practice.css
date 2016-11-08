@@ -1,0 +1,17 @@
+.tbl table {
+	width: 40%;
+	table-layout: fixed;
+}
+
+td .tbl {
+	text-align: center;
+}
+
+.header {
+	font-weight: bold;
+}
+
+
+h1 {
+	font-size: 22pt;
+}
